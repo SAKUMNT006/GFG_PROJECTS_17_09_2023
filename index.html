@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <style>
+        /* Add some basic styling for better appearance */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+        }
+        .left-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .right-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
+        /* Style the form */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="container">
+        <div class="left-content">
+            <h2>Left Content</h2>
+            <!-- Add your left content here -->
+        </div>
+        <div class="middle-content">
+            <h2>middle-content</h2>
+            <!-- Add your middle content here -->
+        </div>
+        <div class="right-content">
+            <h2>Right Content</h2>
+            <!-- Form for username, email, and password -->
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
